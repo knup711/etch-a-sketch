@@ -4,20 +4,17 @@
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: black;
+    background-color: #000000;
     color: aliceblue;
+    text-align: center;
 }
 
 .spielfeld {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     height: 500px;
     width: 500px;
+    margin: auto;
 }
 
 .row {
@@ -30,6 +27,23 @@ body {
   flex: 1 1 auto;
   background-color: white;
   border: 1px;
-  border-color: black;
-  border-style: dotted;
+  border-color: lightgray;
+  border-style: solid;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+button {
+  padding: 8px;
+  margin: 0px;
+  border-radius: 12px;
+  background-color: darkgoldenrod;
+  color: black;
+  font-weight: 900;
 }
